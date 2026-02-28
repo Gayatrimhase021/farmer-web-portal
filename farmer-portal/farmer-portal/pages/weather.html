@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather – Krishi Darpan</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/weather.css">
+</head>
+<body>
+
+<div class="page-header">
+  <h1>🌦️ Live Weather Updates</h1>
+  <p>Real-time weather data and agricultural advisories for your location</p>
+</div>
+
+<section class="section">
+  <div class="weather-search">
+    <input type="text" id="cityInput" placeholder="Enter city (e.g. Nashik, Pune, Nagpur...)" value="Shrirampur">
+    <button onclick="fetchWeather()">Get Weather 🔍</button>
+  </div>
+
+  <div id="weatherDisplay">
+    <div class="loading">Loading weather data</div>
+  </div>
+
+  <h3 class="sub-heading">📅 7-Day Forecast</h3>
+  <div class="forecast-grid" id="forecastGrid"></div>
+
+  <h3 class="sub-heading">🌾 Agro-Meteorological Advisory</h3>
+  <div class="agro-tips" id="agroTips"></div>
+</section>
+
+<script src="../js/layout.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/weather.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Prices – Krishi Darpan</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/market.css">
+</head>
+<body>
+
+<div class="page-header">
+  <h1>📈 Live Mandi Prices</h1>
+  <p>Today's commodity prices from APMC mandis across India</p>
+</div>
+
+<section class="section">
+  <div class="market-header">
+    <div>
+      <div class="live-badge"><span class="live-dot"></span> Live Prices — Updated Today</div>
+      <p class="data-source">Data sourced from AGMARKNET — Govt. of India</p>
+    </div>
+    <select class="mandi-select" onchange="filterMarket(this.value)">
+      <option value="all">All States</option>
+      <option value="maharashtra">Maharashtra</option>
+      <option value="punjab">Punjab</option>
+      <option value="up">Uttar Pradesh</option>
+      <option value="mp">Madhya Pradesh</option>
+      <option value="haryana">Haryana</option>
+    </select>
+  </div>
+
+  <div class="price-chart-row" id="marketStats"></div>
+
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab('vegetables', this)">🥦 Vegetables</button>
+    <button class="tab" onclick="switchTab('cereals', this)">🌾 Cereals &amp; Pulses</button>
+    <button class="tab" onclick="switchTab('oilseeds', this)">🌻 Oilseeds &amp; Spices</button>
+  </div>
+
+  <div id="tab-vegetables" class="tab-content active">
+    <div class="market-table-wrap"><table class="market-table" id="vegetableTable"></table></div>
+  </div>
+  <div id="tab-cereals" class="tab-content">
+    <div class="market-table-wrap"><table class="market-table" id="cerealTable"></table></div>
+  </div>
+  <div id="tab-oilseeds" class="tab-content">
+    <div class="market-table-wrap"><table class="market-table" id="oilseedTable"></table></div>
+  </div>
+</section>
+
+<script src="../js/layout.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/market.js"></script>
+</body>
+</html>

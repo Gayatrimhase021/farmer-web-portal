@@ -1,0 +1,44 @@
+/* ===== CROPS GRID ===== */
+.crops-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.crop-card {
+  background: white; border-radius: 16px;
+  overflow: hidden; box-shadow: 0 8px 40px rgba(26,58,31,0.13);
+  transition: all 0.3s;
+}
+.crop-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(26,58,31,0.18);
+}
+.crop-img {
+  height: 160px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 5rem;
+}
+.crop-body { padding: 1.5rem; }
+.crop-body h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem; color: #1a3a1f; margin-bottom: 0.8rem;
+}
+.crop-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 1rem; }
+.tag {
+  padding: 3px 10px; border-radius: 12px;
+  font-size: 0.75rem; font-weight: 600;
+}
+.tag-kharif { background: #e8f5e9; color: #2d6a35; }
+.tag-rabi   { background: #e3f2fd; color: #1565c0; }
+.tag-annual { background: #fff3e0; color: #e65100; }
+.tag-water  { background: #f3e5f5; color: #7b1fa2; }
+
+.crop-info {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
+}
+.crop-info-item { font-size: 0.82rem; color: #4a5c3f; }
+.crop-info-item strong { display: block; color: #1a2615; font-size: 0.85rem; }
+.crop-fertilizer {
+  margin-top: 1rem; font-size: 0.8rem; color: #4a5c3f;
+}
+.crop-fertilizer strong { color: #1a2615; }

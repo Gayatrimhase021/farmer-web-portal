@@ -1,0 +1,83 @@
+/* ===== SCHEMES GRID ===== */
+.schemes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.5rem;
+}
+.scheme-card {
+  background: white; border-radius: 16px;
+  box-shadow: 0 8px 40px rgba(26,58,31,0.13);
+  overflow: hidden; transition: all 0.3s;
+}
+.scheme-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(26,58,31,0.18);
+}
+.scheme-header {
+  padding: 1.5rem;
+  display: flex; align-items: flex-start; gap: 1rem;
+}
+.scheme-icon {
+  width: 56px; height: 56px; border-radius: 14px;
+  background: linear-gradient(135deg, #4caf50, #2d6a35);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.8rem; flex-shrink: 0;
+}
+.scheme-title h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem; color: #1a3a1f; margin-bottom: 4px;
+}
+.scheme-badge {
+  display: inline-block; padding: 2px 10px;
+  border-radius: 10px; font-size: 0.72rem;
+  font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
+}
+.badge-open    { background: #e8f5e9; color: #2d6a35; }
+.badge-central { background: #e3f2fd; color: #1565c0; }
+.badge-state   { background: #fff3e0; color: #e65100; }
+
+.scheme-body { padding: 0 1.5rem 1rem; }
+.scheme-body p { color: #4a5c3f; font-size: 0.88rem; line-height: 1.6; margin-bottom: 1rem; }
+
+.scheme-amount {
+  display: flex; align-items: center; gap: 8px;
+  background: #f9fdf9; padding: 10px 14px;
+  border-radius: 10px; margin-bottom: 1rem;
+}
+.scheme-amount .amt {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem; color: #2d6a35;
+}
+.scheme-amount .amt-lbl { font-size: 0.82rem; color: #4a5c3f; }
+
+.eligibility-list { list-style: none; margin-top: 0.5rem; }
+.eligibility-list li {
+  font-size: 0.82rem; color: #4a5c3f;
+  padding: 3px 0; padding-left: 16px; position: relative;
+}
+.eligibility-list li::before {
+  content: '✓'; position: absolute; left: 0;
+  color: #4caf50; font-weight: 700;
+}
+
+.scheme-footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #f0f0f0;
+  display: flex; gap: 10px;
+}
+.btn-apply {
+  background: #2d6a35; color: white;
+  border: none; padding: 9px 20px;
+  border-radius: 8px; font-size: 0.88rem;
+  font-weight: 600; cursor: pointer;
+  font-family: 'DM Sans', sans-serif; transition: all 0.2s;
+}
+.btn-apply:hover { background: #1a3a1f; }
+.btn-details {
+  background: transparent; color: #2d6a35;
+  border: 1px solid #2d6a35; padding: 9px 20px;
+  border-radius: 8px; font-size: 0.88rem;
+  font-weight: 600; cursor: pointer;
+  font-family: 'DM Sans', sans-serif; transition: all 0.2s;
+}
+.btn-details:hover { background: #e8f5e9; }

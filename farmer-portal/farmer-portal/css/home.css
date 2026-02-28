@@ -1,0 +1,120 @@
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(135deg, #1a3a1f 0%, #2d6a35 60%, #1a5c2a 100%);
+  min-height: 88vh;
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: flex-start;
+  padding: 4rem 5rem;
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234caf50' fill-opacity='0.07'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+}
+.hero-badge {
+  background: rgba(232,184,75,0.15);
+  border: 1px solid rgba(232,184,75,0.4);
+  color: #e8b84b;
+  padding: 6px 16px; border-radius: 20px;
+  font-size: 0.82rem; font-weight: 600;
+  letter-spacing: 1px; text-transform: uppercase;
+  margin-bottom: 1.5rem; position: relative;
+}
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  line-height: 1.1; max-width: 700px;
+  position: relative; margin-bottom: 1.5rem;
+}
+.hero h1 em { color: #e8b84b; font-style: normal; }
+.hero p {
+  color: #a8d5a2; font-size: 1.15rem;
+  max-width: 520px; line-height: 1.7;
+  position: relative; margin-bottom: 2.5rem;
+}
+.hero-btns { display: flex; gap: 16px; position: relative; }
+.hero-btns a { text-decoration: none; }
+.btn-primary {
+  background: #e8b84b; color: #1a3a1f;
+  border: none; padding: 14px 32px;
+  border-radius: 10px; font-size: 1rem;
+  font-weight: 700; cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.2s;
+  box-shadow: 0 4px 20px rgba(232,184,75,0.4);
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(232,184,75,0.5); }
+.btn-secondary {
+  background: rgba(255,255,255,0.1); color: white;
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 14px 32px; border-radius: 10px;
+  font-size: 1rem; font-weight: 500; cursor: pointer;
+  font-family: 'DM Sans', sans-serif; transition: all 0.2s;
+}
+.btn-secondary:hover { background: rgba(255,255,255,0.2); }
+
+.hero-stats {
+  position: absolute; bottom: 3rem; right: 5rem;
+  display: flex; gap: 2rem;
+}
+.stat-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 14px; padding: 1.2rem 1.8rem; text-align: center;
+}
+.stat-card .num {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem; color: #e8b84b;
+}
+.stat-card .lbl { font-size: 0.78rem; color: #a8d5a2; margin-top: 4px; }
+
+/* ===== FEATURE CARDS ===== */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+.feature-card {
+  background: white; border-radius: 16px;
+  padding: 2rem; box-shadow: 0 8px 40px rgba(26,58,31,0.13);
+  cursor: pointer; transition: all 0.3s;
+  border: 2px solid transparent;
+  position: relative; overflow: hidden;
+  text-decoration: none; color: inherit; display: block;
+}
+.feature-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4caf50, #e8b84b);
+}
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(26,58,31,0.18);
+  border-color: #4caf50;
+}
+.feature-card .icon { font-size: 2.8rem; margin-bottom: 1rem; display: block; }
+.feature-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem; color: #1a3a1f; margin-bottom: 0.5rem;
+}
+.feature-card p { color: #4a5c3f; font-size: 0.9rem; line-height: 1.6; }
+.feature-card .arrow { margin-top: 1.2rem; color: #2d6a35; font-weight: 700; font-size: 0.9rem; }
+
+/* ===== CALENDAR CARDS ===== */
+.calendar-card {
+  background: white; border-radius: 16px;
+  padding: 1.5rem; box-shadow: 0 8px 40px rgba(26,58,31,0.13);
+}
+.calendar-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem; margin-bottom: 0.8rem;
+}
+.calendar-card p { color: #4a5c3f; font-size: 0.88rem; line-height: 1.7; }
+
+@media (max-width: 768px) {
+  .hero { padding: 3rem 1.5rem; min-height: auto; padding-bottom: 2rem; }
+  .hero-stats { position: static; margin-top: 2rem; justify-content: center; flex-wrap: wrap; }
+}

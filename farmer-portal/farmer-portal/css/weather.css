@@ -1,0 +1,87 @@
+/* ===== WEATHER SEARCH ===== */
+.weather-search {
+  display: flex; gap: 10px; margin-bottom: 2rem;
+}
+.weather-search input {
+  flex: 1; padding: 12px 18px;
+  border: 2px solid #ddd; border-radius: 10px;
+  font-size: 1rem; font-family: 'DM Sans', sans-serif;
+  outline: none; transition: border 0.2s;
+}
+.weather-search input:focus { border-color: #2d6a35; }
+.weather-search button {
+  background: #2d6a35; color: white;
+  border: none; padding: 12px 24px;
+  border-radius: 10px; font-size: 1rem;
+  font-weight: 600; cursor: pointer;
+  font-family: 'DM Sans', sans-serif; transition: all 0.2s;
+}
+.weather-search button:hover { background: #1a3a1f; }
+
+/* ===== WEATHER HERO CARD ===== */
+.weather-hero {
+  background: linear-gradient(135deg, #1565c0, #1976d2, #0288d1);
+  border-radius: 20px; padding: 3rem; color: white;
+  margin-bottom: 2rem; position: relative; overflow: hidden;
+}
+.weather-hero::before {
+  content: '☁';
+  position: absolute; right: 3rem; top: 50%;
+  transform: translateY(-50%);
+  font-size: 8rem; opacity: 0.15;
+}
+.weather-main {
+  display: flex; align-items: center; gap: 2rem; margin-bottom: 1.5rem;
+}
+.weather-icon-big { font-size: 5rem; }
+.weather-temp {
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem; line-height: 1; font-weight: 900;
+}
+.weather-temp span { font-size: 2rem; }
+.weather-desc { font-size: 1.2rem; opacity: 0.85; margin-top: 6px; }
+.weather-location { opacity: 0.7; font-size: 0.95rem; margin-top: 4px; }
+.weather-details-row {
+  display: flex; gap: 2rem; flex-wrap: wrap;
+}
+.w-detail { text-align: center; }
+.w-detail .val { font-size: 1.4rem; font-weight: 700; }
+.w-detail .key { font-size: 0.78rem; opacity: 0.7; margin-top: 2px; }
+
+/* ===== FORECAST ===== */
+.sub-heading {
+  font-family: 'Playfair Display', serif;
+  color: #1a3a1f; margin: 2rem 0 1rem; font-size: 1.4rem;
+}
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem; margin-top: 0.5rem;
+}
+.forecast-card {
+  background: white; border-radius: 14px;
+  padding: 1.2rem; text-align: center;
+  box-shadow: 0 8px 40px rgba(26,58,31,0.13);
+}
+.forecast-card .day { font-size: 0.85rem; color: #4a5c3f; font-weight: 600; }
+.forecast-card .f-icon { font-size: 2rem; margin: 8px 0; }
+.forecast-card .f-temp {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem; color: #1a3a1f;
+}
+.forecast-card .f-rain { font-size: 0.75rem; color: #1565c0; margin-top: 4px; }
+
+/* ===== AGRO TIPS ===== */
+.agro-tips {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem; margin-top: 0.5rem;
+}
+.agro-tip {
+  background: white; border-radius: 14px;
+  padding: 1.4rem; box-shadow: 0 8px 40px rgba(26,58,31,0.13);
+  border-left: 4px solid #4caf50;
+}
+.agro-tip .tip-icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
+.agro-tip h4 { color: #1a3a1f; margin-bottom: 0.4rem; font-size: 0.95rem; }
+.agro-tip p { color: #4a5c3f; font-size: 0.83rem; line-height: 1.5; }

@@ -1,0 +1,74 @@
+/* ===== MARKET HEADER ===== */
+.market-header {
+  display: flex; justify-content: space-between;
+  align-items: center; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;
+}
+.live-badge {
+  display: flex; align-items: center; gap: 6px;
+  background: #e8f5e9; border: 1px solid #4caf50;
+  padding: 6px 14px; border-radius: 20px;
+  font-size: 0.82rem; font-weight: 700; color: #2d6a35;
+}
+.live-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #4caf50; animation: pulse 1.5s infinite;
+}
+.data-source { font-size: 0.82rem; color: #4a5c3f; margin-top: 6px; }
+
+/* ===== STATS ROW ===== */
+.price-chart-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.2rem; margin-bottom: 2rem;
+}
+.mini-stat {
+  background: white; border-radius: 14px;
+  padding: 1.4rem; box-shadow: 0 8px 40px rgba(26,58,31,0.13);
+  display: flex; align-items: center; gap: 1rem;
+}
+.ms-icon {
+  width: 48px; height: 48px; border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem; flex-shrink: 0;
+}
+.ms-icon.green { background: #e8f5e9; }
+.ms-icon.gold  { background: #fff8e1; }
+.ms-icon.blue  { background: #e3f2fd; }
+.ms-icon.red   { background: #ffebee; }
+.ms-val {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem; color: #1a3a1f;
+}
+.ms-lbl { font-size: 0.8rem; color: #4a5c3f; margin-top: 2px; }
+
+/* ===== TABLE ===== */
+.market-table-wrap {
+  background: white; border-radius: 16px;
+  box-shadow: 0 8px 40px rgba(26,58,31,0.13); overflow: hidden;
+}
+.market-table { width: 100%; border-collapse: collapse; }
+.market-table th {
+  background: #1a3a1f; color: #e8b84b;
+  padding: 1rem 1.2rem; text-align: left;
+  font-size: 0.85rem; font-weight: 700;
+  letter-spacing: 0.5px; text-transform: uppercase;
+}
+.market-table td {
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid #f0f0f0; font-size: 0.9rem;
+}
+.market-table tr:last-child td { border-bottom: none; }
+.market-table tr:hover td { background: #f9fdf9; }
+.price-up   { color: #2e7d32; font-weight: 700; }
+.price-down { color: #c62828; font-weight: 700; }
+.price-same { color: #777; }
+.trend-up::before   { content: '▲ '; font-size: 0.7rem; }
+.trend-down::before { content: '▼ '; font-size: 0.7rem; }
+
+/* ===== MANDI SELECT ===== */
+.mandi-select {
+  padding: 10px 16px;
+  border: 2px solid #2d6a35; border-radius: 10px;
+  font-family: 'DM Sans', sans-serif; font-size: 0.9rem;
+  outline: none; color: #1a2615; background: white; cursor: pointer;
+}

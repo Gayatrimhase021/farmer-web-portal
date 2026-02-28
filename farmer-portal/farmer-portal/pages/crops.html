@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crops – Krishi Darpan</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/crops.css">
+</head>
+<body>
+
+<div class="page-header">
+  <h1>🌱 Crop Information Guide</h1>
+  <p>Detailed advisory on cultivation, seasons, water requirements and more</p>
+</div>
+
+<section class="section">
+  <div class="top-bar">
+    <div class="crops-filter">
+      <button class="filter-btn active" onclick="filterCrops('all', this)">All Crops</button>
+      <button class="filter-btn" onclick="filterCrops('kharif', this)">Kharif</button>
+      <button class="filter-btn" onclick="filterCrops('rabi', this)">Rabi</button>
+      <button class="filter-btn" onclick="filterCrops('annual', this)">Annual</button>
+    </div>
+    <div class="search-bar">
+      <input type="text" id="cropSearch" oninput="searchCrops()" placeholder="Search crops...">
+      <button>🔍</button>
+    </div>
+  </div>
+  <div class="crops-grid" id="cropsGrid"></div>
+</section>
+
+<script src="../js/layout.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/crops.js"></script>
+</body>
+</html>

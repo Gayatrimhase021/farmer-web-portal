@@ -46,6 +46,7 @@ Or host it free on:
 | Market Prices | pages/market.html | 24+ commodities, 3 tabs, state filter |
 | Govt. Schemes | pages/schemes.html | 9 schemes, filter, apply form |
 
+Contributers
 <a href="https://github.com/farmer-web-portal/undefined/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=farmer-web-portal/undefined" />
+  <img src="https://avatars.githubusercontent.com/u/236081341?v=4" />
 </a>

@@ -45,3 +45,7 @@ Or host it free on:
 | Weather | pages/weather.html | City search, 7-day forecast, agro advisory |
 | Market Prices | pages/market.html | 24+ commodities, 3 tabs, state filter |
 | Govt. Schemes | pages/schemes.html | 9 schemes, filter, apply form |
+
+<a href="https://github.com/farmer-web-portal/undefined/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=farmer-web-portal/undefined" />
+</a>

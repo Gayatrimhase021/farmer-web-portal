@@ -47,7 +47,17 @@ Farmer-Web-Portal/
 ---
 
 ## ⚙️ contributers
-<a href="https:https://avatars.githubusercontent.com/u/236081341?v=4//github.com/farmer-web-portal/undefined/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=farmer-web-portal/undefined" />
-</a>
+  <a href="https://github.com/your-github-username">
+    <img src="https://avatars.githubusercontent.com/u/236081341?v=4"
+         width="150"
+         height="150"
+         style="border-radius:50%; object-fit:cover;"
+         alt="Gayatri Mhase"/>
+  </a>
+</p>
+
+
+  <b>Gayatri Mhase</b><br>
+  Frontend Developer
+</p>
 
